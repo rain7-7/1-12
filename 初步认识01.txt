@@ -1,0 +1,126 @@
+//hello world
+//stdio - std  标准 i input o  output
+//.h 头文件
+#include  <stdio.h>
+#include  <stdlib.h>
+//printf-输出
+//scanf-输入
+
+//int main()
+//{
+//	int a = 0;
+//
+//		scanf("%d", &a);//scanf_s   vs提供
+//		//gcc 、clang不认识scanf_s
+//		//失去了跨平台性
+//
+//		printf("%d\n", a);
+//	
+//	return 0;
+//}
+//main函数的写法
+
+//int main(int argc, char*argv[])
+//{
+//	//具体参数，要用到
+//	return 0;
+//}
+//
+////void是明确告诉我们main函数不要参数
+//int main(void)
+//{
+//	return 0;
+//}
+//
+//
+//int main()
+//{
+//	return 0;
+//}
+//
+////古老的写法
+//void main()
+//{
+//
+//}
+
+//c语言
+//为什么写代码？
+//就是想让计算机帮我们完成任务
+//......
+//c语言必须能够描述现实世界！
+//
+//生活中：
+//年龄 20           整形
+//体重  55.6  小数  浮点型
+
+//数据类型
+//char       字符类型
+//short      短整型
+//int        整形
+//long       长整型
+//long long  更长的整形
+//float      单精度浮点数
+//double     双精度浮点数
+
+//为什么出现这么多整形?
+//每种类型的内存大小是多少？
+
+
+//int main()
+//{   //%d表示打印整型数字
+//	//sizeof  是c语言的一个操作符
+//	//sizeof 计算的是对应类型的变量所占内存的大小
+//	
+//	printf("%d\n", sizeof(char));     //1
+//	printf("%d\n", sizeof(short));    //2
+//	printf("%d\n", sizeof(int));      //4
+//	printf("%d\n", sizeof(long));     //4
+//	printf("%d\n", sizeof(long long));//8
+//	printf("%d\n", sizeof(float));    //4
+//	printf("%d\n", sizeof(double));   //8
+//	
+//	return 0;
+//}
+//c语言标准：
+//sizeof(long)>=sizeof(int)
+
+//计算机中的单位：
+//  bit -比特位
+//  byte -字节
+//  kb
+//  mb
+//  gb
+//  tb
+//  pb
+
+//  1 byte =8 bit
+//  1 kb=1024 byte
+//  1 mb=1024 kb
+//   ...
+
+//4byte=32bit
+//00000000000000000000000000000000
+//00000000000000000000000000000001
+//00000000000000000000000000000010
+//00000000000000000000000000000011
+//...
+//11111111111111111111111111111111
+
+//根据自己的实际情况，更精确的使用内存 空间，使内存利用率更高
+
+
+//类型的用法
+//int main()
+//{
+//	short age = 20;//年龄
+//	float weight = 55.6f;//加个f表示明确是float类型的,直接写出的浮点数默认类型double
+//	char ch = 'a';
+//
+//	return 0;
+//}
+
+//变量、常量
+//生活中的有些值是不变的（比如，圆周率，性别（？）、身份证号码）
+//有些值是可变的，（年龄、体重、薪资）
+//不变的值，c语言中用常量的概念来表示，变得值c语言中用变量来表示
